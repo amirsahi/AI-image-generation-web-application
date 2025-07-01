@@ -1,6 +1,8 @@
 fastapi
 diffusers
 transformers
+accelerate 
+safetensors
 scipy
 ftfy
 torch
