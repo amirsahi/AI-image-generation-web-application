@@ -17,7 +17,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
 
 pipe.to("cpu")   #if GPU is available, change to "cuda"
 
-prompt = "a photograph of an astronaut riding a horse"
+prompt = "a panda playing football"
 
 #image = pipe(prompt, num_inference_steps=50).images[0]
 
