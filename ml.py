@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 from diffusers import StableDiffusionPipeline
 from PIL.Image import Image
-from IPython.display import display
+
 
 token_path = Path("token.txt")
 token = token_path.read_text().strip()
@@ -41,7 +41,3 @@ def obtain_image(
         generator=generator,
     ).images[0]
     return image
-
-
-image = obtain_image(prompt, num_inference_steps=5, seed=1024)
-display(image)
